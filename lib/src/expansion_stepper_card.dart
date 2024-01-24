@@ -1,4 +1,4 @@
-import 'package:expansion_stepper/src/dto/stepper_children.dart';
+import 'package:expansion_stepper/src/model/stepper_children.dart';
 import 'package:expansion_stepper/src/widgets/horizontal_stepper.dart';
 import 'package:expansion_stepper/src/widgets/vertical_stepper.dart';
 import 'package:flutter/material.dart';

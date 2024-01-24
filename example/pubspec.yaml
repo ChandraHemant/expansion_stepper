@@ -1,11 +1,11 @@
 name: expansion_stepper_example
-description: "Demonstrates how to use the expansion_stepper plugin."
+description: Demonstrates how to use the expansion_stepper plugin.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: '>=3.2.5 <4.0.0'
+  sdk: '>=3.1.5 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -53,6 +53,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  assets:
+    - assets/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

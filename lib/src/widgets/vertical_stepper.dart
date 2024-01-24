@@ -1,6 +1,5 @@
-import 'package:expansion_stepper/src/dto/stepper_children.dart';
+import 'package:expansion_stepper/src/model/stepper_children.dart';
 import 'package:expansion_stepper/src/widgets/common/dot_provider.dart';
-import 'package:flutter/material.dart';
 import 'package:htkc_utils/htkc_utils.dart';
 
 class VerticalStepperItem extends StatelessWidget {
