@@ -42,7 +42,7 @@ This Flutter application demonstrates the usage of the ExpansionStepperCard widg
 
 ## Example ExpansionStepperCard
 
-![Example](https://raw.githubusercontent.com/ChandraHemant/expansion_stepper/main/assets/demo.gif)
+![Example](https://raw.githubusercontent.com/ChandraHemant/expansion_stepper/main/example/assets/demo.gif)
 
 ```dart
 import 'package:expansion_stepper/expansion_stepper.dart';
