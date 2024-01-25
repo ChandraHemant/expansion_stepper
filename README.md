@@ -1,6 +1,6 @@
 # expansion_stepper
 
-Combination of Expansion Tile Card and Another Stepper
+Create sleek, modern Horizontal and Vertical Steppers with Material Theme-inspired design using a combination of Expansion Tile and Stepper components.
 
 ### Features
 

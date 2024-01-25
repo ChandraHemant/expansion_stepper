@@ -27,4 +27,10 @@ class Utils {
 
     return greyscale;
   }
+  static ButtonStyle flatButtonStyle = TextButton.styleFrom(
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(4.0)),
+    ),
+  );
+
 }

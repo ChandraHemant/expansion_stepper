@@ -1,5 +1,4 @@
-import 'package:expansion_stepper/src/model/stepper_children.dart';
-import 'package:expansion_stepper/src/widgets/common/dot_provider.dart';
+import 'package:expansion_stepper/expansion_stepper.dart';
 import 'package:htkc_utils/htkc_utils.dart';
 
 class HorizontalStepperItem extends StatelessWidget {
@@ -50,19 +49,21 @@ class HorizontalStepperItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: item.isEmergent?Emergent(
-        style: EmergentStyle(
-          color: item.color,
-          border: item.border,
-          shape: item.shape,
-          lightSource: item.lightSource,
-          depth: item.depth,
-        ),
-        child: Padding(
-          padding: item.padding!,
-          child: GestureDetector(
-            onTap: item.onTap,
+    return Padding(
+      padding: item.padding!,
+      child: MaterialButton(
+        onPressed: item.onTap,
+        splashColor: item.onTapSplashColor,
+        highlightColor: item.onTapHighlightColor,
+        child: Flexible(
+          child: item.isEmergent?Emergent(
+            style: EmergentStyle(
+              color: item.color,
+              border: item.border,
+              shape: item.shape,
+              lightSource: item.lightSource,
+              depth: item.depth,
+            ),
             child: Column(
               children: [
                 item.topContent!,
@@ -75,13 +76,7 @@ class HorizontalStepperItem extends StatelessWidget {
                 item.bottomContent!,
               ],
             ),
-          ),
-        ),
-      ):Padding(
-        padding: item.padding!,
-        child: GestureDetector(
-          onTap: item.onTap,
-          child: Column(
+          ):Column(
             children: [
               item.topContent!,
               Column(

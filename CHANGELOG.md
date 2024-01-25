@@ -1,3 +1,7 @@
+## 1.0.2
+
+* This fix some UI issue
+
 ## 1.0.1
 
 * This version downgrade SDK version

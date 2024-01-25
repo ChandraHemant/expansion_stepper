@@ -1,6 +1,6 @@
 name: expansion_stepper
-description: This flutter package simplifies the creation of Horizontal and Vertical steppers by providing an elevated and customizable alternative to the standard ExpansionTile. With a design inspired by the Google Material Theme, the ExpansionStepperCard widget offers a polished and modern appearance, making it a suitable choice for developers aiming to enhance the visual aesthetics of their Flutter applications.
-version: 1.0.1
+description: Merge ExpansionTile & Stepper for sleek Material-themed Horizontal & Vertical Steppers.
+version: 1.0.2
 homepage: https://github.com/ChandraHemant/expansion_stepper
 
 environment:
@@ -14,7 +14,8 @@ dependencies:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
 
-  htkc_utils:
+  htkc_utils: ^1.5.6
+
 
 dev_dependencies:
   flutter_test:

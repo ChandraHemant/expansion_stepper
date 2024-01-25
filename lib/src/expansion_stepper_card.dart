@@ -1,6 +1,4 @@
-import 'package:expansion_stepper/src/model/stepper_children.dart';
-import 'package:expansion_stepper/src/widgets/horizontal_stepper.dart';
-import 'package:expansion_stepper/src/widgets/vertical_stepper.dart';
+import 'package:expansion_stepper/expansion_stepper.dart';
 import 'package:flutter/material.dart';
 
 /// A single-line [ListTile] with a trailing button that expands or collapses
@@ -28,6 +26,7 @@ class ExpansionStepperCard extends StatefulWidget {
     this.leading,
     required this.title,
     this.subtitle,
+    this.onTap,
     this.onExpansionChanged,
     this.children = const <Widget>[],
     this.trailing,
@@ -50,7 +49,6 @@ class ExpansionStepperCard extends StatefulWidget {
     this.isThreeLine = false,
     this.shadowColor = const Color(0xffaaaaaa),
     this.animateTrailing = false,
-
     this.stepperChildren = const <StepperChildren>[],
     this.verticalGap = 20,
     this.activeIndex = 0,
@@ -132,6 +130,8 @@ class ExpansionStepperCard extends StatefulWidget {
   /// true. When the tile starts collapsing, this function is called with
   /// the value false.
   final ValueChanged<bool>? onExpansionChanged;
+
+  final GestureTapCallback? onTap;
 
   /// The widgets that are displayed when the tile expands.
   ///
@@ -354,6 +354,7 @@ class ExpansionStepperCardState extends State<ExpansionStepperCard>
                     contentPadding: widget.contentPadding,
                     leading: widget.leading,
                     title: widget.title,
+                    onTap: widget.onTap,
                     subtitle: widget.subtitle,
                     trailing: RotationTransition(
                       turns: widget.trailing == null || widget.animateTrailing

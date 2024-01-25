@@ -9,11 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ExpansionStepperCard Demo',
+      title: 'Expansion Stepper Card Demo',
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'ExpansionStepperCard Demo'),
+      home: const MyHomePage(title: 'Expansion Stepper Card Demo'),
     );
   }
 }
@@ -75,7 +75,7 @@ class MyHomePageState extends State<MyHomePage> {
                         print('Order Placed!');
                       }
                   },
-                  padding: const EdgeInsets.only(left: 16),
+                  padding: const EdgeInsets.only(left: 24,right: 24),
                   topContent: const Divider(
                     thickness: 1,
                     color: Colors.black,

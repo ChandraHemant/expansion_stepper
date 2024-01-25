@@ -20,6 +20,8 @@ class StepperChildren {
   final bool isEmergent;
 
   final Color color;
+  final Color onTapSplashColor;
+  final Color onTapHighlightColor;
 
   final double? depth;
 
@@ -42,5 +44,7 @@ class StepperChildren {
       this.lightSource = LightSource.topLeft,
       this.border = const EmergentBorder.none(),
       this.color = Colors.white,
+      this.onTapHighlightColor = Colors.transparent,
+      this.onTapSplashColor = Colors.transparent,
       this.isEmergent = false});
 }
