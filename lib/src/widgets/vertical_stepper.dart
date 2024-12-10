@@ -1,5 +1,6 @@
 import 'package:expansion_stepper/expansion_stepper.dart';
-import 'package:htkc_utils/htkc_utils.dart';
+import 'package:flutter/material.dart';
+import 'package:itq_utils/itq_utils.dart';
 
 class VerticalStepperItem extends StatelessWidget {
   /// Stepper Item to show vertical stepper

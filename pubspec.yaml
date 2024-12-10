@@ -1,6 +1,6 @@
 name: expansion_stepper
 description: Merge ExpansionTile & Stepper for sleek Material-themed Horizontal & Vertical Steppers.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/ChandraHemant/expansion_stepper
 
 environment:
@@ -14,7 +14,7 @@ dependencies:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
 
-  htkc_utils: ^1.5.6
+  itq_utils: ^2.0.2
 
 
 dev_dependencies:
