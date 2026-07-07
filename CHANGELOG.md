@@ -1,3 +1,6 @@
+## 1.0.4
+* This version upgrade package version
+
 ## 1.0.3
 * This version replace package
  
